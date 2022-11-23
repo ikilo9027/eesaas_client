@@ -1,0 +1,13 @@
+espresomediaNextjs:
+  component: "@sls-next/serverless-component@latest"
+  inputs:
+    name:
+      defaultLambda: eesaas-nextjs-defaultlambda
+      imageLambda: eesaas-nextjs-imagelambda
+    # domain: ["espresomediacloud.com"]
+    publicDirectoryCache: true
+    bucketRegion: "ap-northeast-2"
+    bucketName: "espresomediacloud.com"
+    cloudfront:
+      # distributionId: 'E3V7OUUNVSTJZB'
+      comment: "next deploy"
